@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .parentdiv{
+            display: flex;
+            margin: 10px;
+            /* padding: 10px; */
+        }
+
+        .parent1div{
+            display: flex;
+            margin: 10px;
+        }
+        .firstdiv{
+            border: 1px solid black;
+            flex: 1;
+            text-align: center;
+        }
+        .firstdiv1{
+            border: 1px solid black;
+            flex: 1;
+            text-align: center;
+        }
+
+        
+        .firstdiv2{
+            border: 1px solid black;
+            flex: 1;
+            text-align: center;
+        }
+        
+        .seconddiv1{
+            border: 1px solid black;
+            flex: 1;
+            text-align: center;
+        }
+        .seconddiv2{
+            border: 1px solid black;
+            flex: 1;
+            text-align: center;
+
+        }
+        .seconddiv3{
+            border: 1px solid black;
+            flex: 1;
+            text-align: center;
+        }
+        .mainHeading{
+            text-align: center;
+        }
+        body{
+            background-color: aqua;
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            text-transform:uppercase;
+            color: white;
+           
+
+
+        }
+        .clip{
+            width: 600px;
+            height: 300px;
+            display: flex
+;
+    justify-content: center;
+    align-items: center;
+            margin: auto;
+            background-color: red;
+            clip-path: polygon(50% 25%, 50% 0%, 100% 50%, 50% 100%, 50% 75%, 0% 75%, 0% 25%);
+background-color: #478eeb
+        }
+    </style>
+</head>
+<body>
+    <section class="mainHeading">
+     <div class="clip">
+        <h1>
+            Our Services
+        </h1>
+     </div>
+
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam adipisci maiores dicta soluta doloremque corrupti nobis dignissimos quod eveniet aspernatur.
+            
+        </p>
+        <div class="parentdiv">
+            <div class="firstdiv">
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+                <h3>Graphic design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dignissimos ing elit. Quam adipisci maiores dicta soluta doloremque corrupti nobis dignissimos quod eveniet aspernatur.</p>
+            </div>
+            <div class="firstdiv1">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <h3>Web Devlopment</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dignissimos.</p>
+            </div>
+            <div class="firstdiv2">
+                <i class="fa fa-gg-circle" aria-hidden="true"></i>
+                <h3>Web Devlopment</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dignissimos.</p>
+            </div>
+        </div>
+        <div class="parent1div">
+            <div class="seconddiv1">
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+                <h3>Graphic design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dignissimos.</p>
+            </div>
+            <div class="seconddiv2">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <h3>Web Devlopment</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dignissimos.</p>
+            </div>
+            <div class="seconddiv3">
+                <i class="fa fa-gg-circle" aria-hidden="true"></i>
+                <h3>Web Devlopment</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dignissimos.</p>
+            </div>
+
+
+        </div>
+    </section>
+</body>
+</html>
