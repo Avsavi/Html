@@ -9,7 +9,7 @@
 </head>
 <style>
     body {
-        background-color:#082b76;
+        background-color: #082b76;
         /* display: flex; */
     }
 
@@ -43,7 +43,8 @@
         color: aquamarine;
         /* margin-left: 10px; */
     }
-    .contactform{
+
+    .contactform {
         background-color: #89d8e3;
         text-align: center;
         width: 60%;
@@ -51,43 +52,98 @@
         margin-left: 20%;
         padding: 20px;
         position: absolute;
-        top: 300px;
+        top: 450px;
     }
-    .contactform>div{
+
+    .contactform>div {
         margin: 10px;
     }
-    .contactform>div input{
+
+    .contactform>div input {
         width: 60%;
         padding: 14px;
     }
-    h1{
-      text-transform:capitalize;
-      word-spacing: 10px;
-      margin-top: 70px;
-      margin-bottom: 40px;
-      color:#082b76;
-      letter-spacing: 1px;
-      font-weight: bold;
+
+    h1 {
+        text-transform: capitalize;
+        word-spacing: 10px;
+        margin-top: 70px;
+        margin-bottom: 40px;
+        color: #082b76;
+        letter-spacing: 1px;
+        font-weight: bold;
     }
-    textarea{
+
+    textarea {
         width: 64%;
         margin-top: 10px;
     }
-    button{
+
+    button {
         border: 1px solid white;
-    padding: 8px 25px;
-    text-transform: uppercase;
-    font-weight: 800;
-    opacity: 0px;
-    background-color: #89d8e3;
-    letter-spacing: 1px;
-    margin: 9px;
-    color: #082b76;
+        padding: 8px 25px;
+        text-transform: uppercase;
+        font-weight: 800;
+        opacity: 0px;
+        background-color: #89d8e3;
+        letter-spacing: 1px;
+        margin: 9px;
+        color: #082b76;
+    }
+
+    .navbar ul {
+        display: flex;
+        /* background-color: #fff; */
+
+
+    }
+
+    .navbar li {
+        /* margin: 6px; */
+        display: inline;
+        padding: 50px;
+        margin: 1px;
+        color: #fff;
+        /* margin-left: 20px; */
+        /* word-spacing: 100px; */
     }
 </style>
 
 <body>
     <section class="container">
+        <div class="navbar">
+            
+                <ul>
+                    <li>
+                        Home 
+                        <select name="" id="">
+                            <option value="Home">1</option>
+                            <option value="Home">2</option>
+                        </select>
+                    </li>
+                    <li>
+                        About us
+                        <i></i> <option value="Option"></option>
+                    </li>
+                    <li>
+                        Career <option value=""></option>
+                    </li>
+                    <li>
+                        Skills <option value=""></option>
+                    </li>
+                    <li>
+                        Courser <option value=""></option>
+                    </li>
+                    <li>
+                        contact us <option value=""></option>
+                    </li>
+                    <li>
+                        Quries <option value=""></option>
+                    </li>
+                    <!--    <li> <button> input</button></li> -->
+                </ul>
+            
+        </div>
         <div class="maindiv">
             <div class="mainoffice">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -108,7 +164,7 @@
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <h2>Email</h2>
                 <p> <a href="www.goolge.com"> hello@world.com</a></p>
-                
+
             </div>
         </div>
         <div class="contactform">
