@@ -38,8 +38,8 @@ function num (totalnumber)
 console.log("number of i ="+ i);
  }
 }
-num(6); */
-
+num(6); 
+=====================================
 function num(totalnumber) {
     for (let i = 0; i <= totalnumber; i++) {
         console.log("number of i = " + i);
@@ -47,4 +47,58 @@ function num(totalnumber) {
 }
 
 // Call the function
-num(6);
+num(6); 
+
+
+let s ={
+    name : "John",
+    grade : "A",
+    age : "24",
+
+    coding : function () {
+        console.log("student is coding...");
+    },
+    singing : function () {
+        console.log("student is singing...");
+    },
+    dancing : function () {
+        console.log("student is dancing...");
+    }
+}
+s.coding();
+s.dancing();
+console.log(s.name);*/
+
+
+var arr =[10,23,8,33,3,66,9,7,0,88,77]
+var arr2=[];
+var arr3=[];
+
+
+for( var i=0;i<arr.length;i++){
+
+    if(arr[i]>=10){
+      arr2.push(arr[i]);
+      console.log(arr2);  
+    }
+    else{
+    arr3.push(arr[i]);
+    }
+}
+
+/*var arr = [10, 23, 8, 33, 3, 66, 9, 7, 0, 88, 77];
+var arr2 = [];
+var arr3 = [];
+
+for (var i = 0; i < arr.length; i++) {
+  if (arr[i] >= 10) {
+    arr2.push(arr[i]);
+    console.log("arr2:", arr2);
+  } else {
+    arr3.push(arr[i]); // not [i], you want the value, not the index
+  }
+}*/
+
+console.log("Final arr2:", arr2);
+console.log("Final arr3:", arr3);
+
