@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: hsl(205.71deg 30.43% 95.49%);
+            font-family: "Cooper";
+        }
+        .papa , .nextpapa{
+            display: flex;
+        }
+        .papa > div ,  .nextpapa > div{
+            flex: 1;
+           
+        }
+        .papa > div {
+            margin: 10px;
+        }
+        .nextpapa > div{
+            text-align: center;
+            color: hsl(225 53% 17% / 1);
+            background-color: white;
+            border: 1px solid lightgray;
+            padding: 2rem 0px;
+        }
+        .papa div h1{
+            background-color: hsl(225 53% 17% / 1);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 22px;
+            font-family: "Cooper";
+        }
+
+        .inputsection{
+            display: flex;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .inputsection div{
+            flex: 1;
+            background-color: white;
+            margin: 10px;
+            border-radius: 8px;
+            
+        }
+        .right{
+            background-color: lightgray;
+        }
+        .inputsection div input{
+            padding: 10px;
+            border: none;
+           
+        }
+        .inputsection div .fa{
+            font-size: 18px;
+            margin-left: 9px;
+        }
+        .r{
+            border-right: none !important;
+        }
+        .t{
+            border-top: none !important;
+        }
+        .b{
+            border-bottom: none !important;
+        }
+        .l{
+            border-left: none !important;
+        }
+        
+        .text textarea{
+            width: 88%;
+            margin: 2rem;
+            border-radius: 8px;
+            border: none;
+        }
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <section class="papa">
+        <div class="leftchild">
+            <h1>Get in tuch with us</h1>
+            <section class="nextpapa">
+                <div class="one t l">
+                    <i class="fa fa-mobile"></i>
+                    <h2>Phone Number</h2>
+                    <p>9988776654</p>
+                </div>
+                <div class="tow one t r">
+                    <i class="fa fa-mobile"></i>
+                    <h2>Phone Number</h2>
+                    <p>9988776654</p>
+                </div>
+            </section>
+            <section class="nextpapa">
+                <div class="one l b">
+                    <i class="fa fa-mobile"></i>
+                    <h2>Phone Number</h2>
+                    <p>9988776654</p>
+                </div>
+                <div class="tow one b r">
+                    <i class="fa fa-mobile"></i>
+                    <h2>Phone Number</h2>
+                    <p>9988776654</p>
+                </div>
+            </section>
+
+        </div>
+        <div class="right">
+            <h1>Get in tuch with us</h1>
+            <section class="inputsection">
+                <div>
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Enter Your name">
+                    
+                </div>
+                <div>
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Enter Your name">
+                </div>
+            </section>
+            <section class="inputsection">
+                <div>
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Enter Your name">
+                    
+                </div>
+                <div>
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Enter Your name">
+                </div>
+            </section>
+            <section class="text">
+                <textarea name="" rows="5"  id=""></textarea>
+            </section>
+
+           
+        </div>
+    </section>
+</body>
+</html>

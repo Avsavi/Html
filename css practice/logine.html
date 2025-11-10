@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image:  linear-gradient(to bottom right, blue, pink);
+        }
+        .loginbox{
+            width: 300px;
+            padding: 0.5rem 3rem;
+            margin: auto;
+            border: 1px solid gray;
+            border-radius: 9px;
+            background-color: white;
+        }
+        h1{
+            text-align: center;
+            font-size: 3rem;
+        }
+        input{
+            border: none;
+            width: 90%;
+            padding: 6px;
+        }
+        .inputbox{
+            padding: 5px;
+            border-bottom: 1px solid lightgray;
+            margin: 9px 0px;
+        }
+        label{
+            color: lightgray;
+        }
+        .link{
+            text-align: right;
+            padding: 9px 0px;
+           
+        }
+        .link a{
+            color: lightgray;
+            text-decoration: none;
+        }
+        .btn{
+            width: 96%;
+            border-radius: 20px;
+            padding: 10px;
+            border: none;
+            background-image: linear-gradient(to right, blue, pink);
+            color: white;
+        }
+        .singup p{
+            color: lightgray;
+            text-align: center;
+            padding: 1rem 0px;
+        }
+        .icons .fa{
+           padding: 1rem;
+            border-radius: 50px;
+            color: white;
+            
+        }
+        .icons .fa-facebook{
+           padding: 1rem 1.2rem;
+            border-radius: 50px;
+            background-color: blue;
+        }
+
+        .icons .fa-twitter{
+          
+            border-radius: 50px;
+            background-color: lightskyblue;
+        }
+        .icons .fa-google{
+          
+            border-radius: 50px;
+            background-color: tomato;
+        }
+        .icons{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="loginbox">
+      <form action="">
+        <h1>login</h1>
+        <div>
+            <label for="">User Name</label>
+            <div class="inputbox">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Enter Name">
+            </div>
+        </div>
+        <div>
+            <label for="">User Password</label>
+            <div class="inputbox">
+                <i class="fa fa-lock"></i>
+                <input type="text" placeholder="Enter Password">
+            </div>
+        </div>
+        <div class="link">
+            <a href="">Forget Password</a>
+        </div>
+        <div>
+            <button class="btn">Login</button>
+        </div>
+        <div class="singup">
+            <p>Or Sing up using google</p>
+        </div>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google"></i>
+            
+        </div>
+        <div class="singup">
+            <p>Or Sing up using google</p>
+        </div>
+        
+      </form>
+    </section>
+</body>
+</html>
