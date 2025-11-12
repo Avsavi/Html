@@ -13,8 +13,8 @@ function add(x,y) {
    console.log(x+y);   
 }
 add(10,12)
-add(20,80)
-*/
+add(20,80) */
+
 // parameter function 
 
 function sam(a, b, c) {
@@ -76,6 +76,24 @@ console.log(maths);
 
 var sqroot = maths.map(num => Math.sqrt(num));
 console.log(sqroot);
+
+var w= [10,20,40,30]
+var e= w.map ((add)=> add+4);
+
+console.log(e);
+
+var q = w.filter((f)=>
+f>20
+)
+
+console.log(q);
+
+var g = w.reverse();
+console.log(g);
+
+
+
+
 
 
 
