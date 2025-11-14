@@ -13,7 +13,7 @@ function add(x,y) {
    console.log(x+y);   
 }
 add(10,12)
-add(20,80) */
+add(20,80) 
 
 // parameter function 
 
@@ -49,13 +49,13 @@ console.log(a);
 var arr = [1, [2, [3, [4, [5, [6, [7, [8, [9, [10]]]]]]]]]]
 
 
-console.log(arr.flat(Infinity));
+console.log(arr.flat(Infinity));  // conversion of aray 
 
 
 /// reverese order array 
 
-var fruits = ["apple", "banana", "cherry"];
-var reversedFruits = fruits.reverse();
+var fruits = ["apple", "banana", "cherry"]; // 
+var reversedFruits = fruits.reverse(); // reverse the array value 
 console.log(reversedFruits);
 
 
@@ -90,6 +90,70 @@ console.log(q);
 
 var g = w.reverse();
 console.log(g);
+
+*/
+
+
+// array manipulation methods 
+/*
+let a =["akash","mohan","roshan","deepak"]
+
+let b =[10,20,30,40,50,60]
+// let c1=["ram","shyam",100,200,"Ranjeet"]
+
+console.log(a);
+
+a.unshift("Manoj")  // --- add the variable form left to right initial
+console.log(a);
+a.shift();     //--- remove the variablr from left to right initial
+console.log(a);
+
+a.splice(2,0,"Ram")   // --- delete the array and insert the array splice used like (first = used  for selection  , delete = the value which you want to delete, last = for add the value )
+console.log(a);
+
+a.splice(1,1,"Shyam")   
+console.log(a);
+
+
+let newslice =a.slice(1,3)    //-- slice  delete the value of array 
+console.log(newslice);
+
+
+
+let c= a.concat(b,c1);   // combine the two array in a single aaray 
+console.log(c);
+
+
+let c = a.join(); // default join with comma
+console.log(c);
+
+let c1= a.join("-")  //join with oining numbers
+console.log(c1);
+
+let c2= a.join(" | ")  // join with Custom separator
+console.log(c2);
+let c3= a.join("")   // join with no separater
+console.log(c3);
+
+
+
+let nString = ["apple","banana","kiwi"]
+
+let cString = nString.toString()
+
+console.log(cString);
+*/
+
+let  x= [10,20,30,40,100,2000,30000,15]
+
+
+
+
+
+
+
+
+
 
 
 
