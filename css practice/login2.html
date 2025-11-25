@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            background-color: black;
+            margin: 100px 300px;
+        }
+
+        .container {
+            display: flex;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlMzCJzSIGFU4X2VoYVR-q0nKnd2UTo1eDh5hDHoBotzifrMr4ceNewboY9qFXcW2gdw&usqp=CAU');
+            background-size: 100%;
+        }
+
+        .leftpanel h1 {
+            text-align: left;
+            color: white;
+        }
+
+        .leftpanel {
+            color: white;
+            /* margin-left: 50px; */
+            padding: 30px;
+        }
+
+        .username input{
+            width: 80%;
+        }
+        .password input{
+            width: 80%;
+        }
+
+        .ckeck{
+            position: relative;
+    left: -3px;
+    top: 2px;
+
+        }
+        .rightpanel h3 {
+            text-align: center;
+            margin-right: 90px;
+        }
+
+        .username {
+            text-align: left;
+            font-size: small;
+            color: black;
+        }
+
+        .checkbox {
+            padding: 10px 180px 0px 0px;
+            
+        }
+
+        .password {
+            text-align: left;
+            color: black;
+            font-size: small;
+        }
+
+        button {
+            background-color: rgb(219, 130, 29);
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            margin-right: 200px;
+            border-radius: 20px;
+        }
+
+        .btn {
+            padding-top: 10px;
+
+        }
+
+        .option {
+            padding: 10px ;
+            /* margin-right: 200px; */
+        }
+
+        .option a {
+            padding-right: 150px;
+        }
+
+        a {
+            color: white;
+            /* margin-right: 150px; */
+        }
+
+        .icons {
+            word-spacing: 5px;
+        }
+
+        .discliamer {
+            margin-right: 30px;
+        }
+
+        p {
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="leftpanel">
+            <h1>
+                Welcome <br>back
+            </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolorem dolore
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"> </i>
+                <i class="fa fa-google" aria-hidden="true"></i>
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+
+            </div>
+        </div>
+
+        <div class="rightpanel">
+            <form action="logbox">
+                <h3> Sign in</h3>
+                <div class="username">
+                    <label for="Username" id="">Email Address</label><br>
+                    <input type="email" id="email">
+                </div>
+                <div class="password">
+                    <label for="Username" id="user password">Password</label><br>
+                    <input type="email" id="" name="">
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="" name="" class="ckeck">
+                    <label for="name">Remember Me</label>
+                </div>
+                <div class="btn">
+                    <button> Sign in now</button>
+                </div>
+                <div class="option">
+                    <a href="">Lost Your password?</a>
+                </div>
+                <div class="discliamer">
+                    <p> By clicking on "Sign in now" you agree to
+                        <a href="">Terms of service</a> |
+                        <a href="">Privacy Policy</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        </form>
+    </section>
+
+</body>
+
+</html>

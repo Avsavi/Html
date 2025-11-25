@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-color: black;
+            margin: 100px 300px;
+        }
+
+        .container {
+            display: flex;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlMzCJzSIGFU4X2VoYVR-q0nKnd2UTo1eDh5hDHoBotzifrMr4ceNewboY9qFXcW2gdw&usqp=CAU');
+            background-size: cover;
+        }
+
+        .leftpanel {
+            color: white;
+            padding: 30px;
+        }
+
+        .leftpanel h1 {
+            text-align: left;
+        }
+
+        .rightpanel {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .rightpanel input {
+            width: 70%;
+        }
+
+        .rightpanel h3 {
+            text-align: center;
+            margin-right: 90px;
+        }
+
+        .username,
+        .password {
+            text-align: left;
+            font-size: small;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .checkbox {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: rgb(219, 130, 29);
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            margin-top: 10px;
+            margin-right: 200px;
+        }
+
+        .btn {
+            padding-top: 10px;
+        }
+
+        .option {
+            padding: 10px;
+        }
+
+        .option a {
+            padding-right: 150px;
+        }
+
+        a {
+            color: white;
+        }
+
+        .icons {
+            word-spacing: 5px;
+        }
+
+        .disclaimer {
+            margin-right: 30px;
+        }
+
+        p {
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="leftpanel">
+            <h1>Welcome <br>back</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque dolorem dolore</p>
+            <div class="icons">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-google" aria-hidden="true"></i>
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="rightpanel">
+            <form action="logbox">
+                <h3>Sign in</h3>
+
+                <div class="username">
+                    <label for="email">Email Address</label><br>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="password">
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+
+                <div class="btn">
+                    <button type="submit">Sign in now</button>
+                </div>
+
+                <div class="option">
+                    <a href="#">Lost your password?</a>
+                </div>
+
+                <div class="disclaimer">
+                    <p>By clicking on "Sign in now" you agree to
+                        <a href="#">Terms of service</a> |
+                        <a href="#">Privacy Policy</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

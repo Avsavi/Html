@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First HTML with css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image: linear-gradient(to right, #4da3ff,#ff66cc ); margin: 50px 380px;
+        }
+        .loginpage{
+            text-align: center;border: 1px solid black; padding: 0px; background-color: white;
+            margin: 100px;
+        }   
+        #Lpage{
+            border: 1px solid black;
+        }
+        button{
+            text-transform: uppercase;padding: 5px 90px 5px 90px; background-image: linear-gradient(to right,#99ccff, hsl(300, 100%, 75%)); color: white; font-size: large; font-weight: 500; font-style: bold; border-radius: 20px;
+        }
+        input{
+            border:0px 0px 10px 0px; 
+        }
+        #parafp{
+            padding: 0px 0px 0px 100px;
+        }
+        .footerpara{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+ <section class="loginpage">
+  
+    <div class="username">
+       <h1 class="loginheader">login</h1>
+       <label for="loginname">username</label> <br>
+       <div id="usernameinput">
+        <i class="fa fa-user-o" aria-hidden="true"></i>
+        <input type="text" placeholder="Type your user name">
+       </div>
+    </div>
+    <div class="password">
+       <label for="Password" id="pwd">Password</label> <br>
+       <i class="fa fa-key" aria-hidden="true"></i>
+       <input type="text" placeholder="Type your password">
+       <p id="parafp">forgot password?</p>
+    </div>
+    <button>login</button>
+    <div class="signuppara">
+        <p> or sign up using</p>
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"> </i>
+        <i class="fa fa-google" aria-hidden="true"></i>
+    </div>
+    <div class="footerpara">
+        <p> or sign up using</p>
+        <h3>sign up</h3>
+    </div>
+
+ </section>
+</body>
+</html>
