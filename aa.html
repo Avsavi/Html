@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <h2></h2>
+
+    <button>click</button>
+    <script>
+        let count = 0;
+let s=setInterval(() => {
+    console.log(count);
+//     let z= arr[0];
+// console.log(z);
+    document.querySelector('h1').innerText=arr[count].title;
+    document.querySelector('h2').innerText=arr[count]?.num??"data not found"
+    count++;
+    if(count>9) {count=0};
+}, 1000);
+
+function band(){
+    clearInterval(s);
+}
+
+var btn=document.querySelector('button');
+btn.addEventListener('click',band);
+let arr =[
+    { title:'its raining'},
+    { title:'mansoon started ' , num:2},
+    { title:'there is heaby rainfall in pune'},
+    { title:' waterfall overflow', num:4},
+    { title:'rainy season price crashed for raincoat '},
+    { title:'flooded ', num:6},
+    { title:'farmer started farming'},
+    { title:'heavy rainfall',num:8},
+    { title:'due to the heavy rain no scool'},
+    { title:'raining since last week', num:10},
+
+]
+    </script>
+</body>
+</html>
