@@ -28,14 +28,22 @@
 
         var userProfileData=[
             {
-                url:'',
+                url:'https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=',
                 name:"Deepak",
-                contact:"",
-                email:'',
-                phone:'',
-                address:""
+                contact:"yes",
+                email:'deepak@gmail.com',
+                phone:'098989898',
+                address:"deccan road pune"
             }
         ]
+
+         var getData=document.querySelectorAll('span');
+         getData[0].innerText=userProfileData[0].name;
+         getData[1].innerText = userProfileData[0].contact;
+        getData[2].innerText = userProfileData[0].email;
+        getData[3].innerText = userProfileData[0].phone;
+        getData[4].innerText = userProfileData[0].address;
+        document.querySelector('img').src=userProfileData[0].url
 
 
     </script>
