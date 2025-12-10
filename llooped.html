@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section></section>
+    <hr>
+    <div>
+
+    </div>
+    <script>
+        var data=[
+            {name:'Deepak', phone:3424},
+            {name:'sham', phone:423},
+            {name:'ram', phone:867},
+            {name:'arjun', phone:21}
+            
+        ]
+     var htmldata='';
+        data.forEach((s)=>{
+          // htmldata+= `<h1> ${s.name}  === ${s.phone}</h1>`;
+          var t=document.createElement("h1");
+          t.innerText=`${s.name} = ${s.phone}`;
+          document.querySelector('section').appendChild(t);
+
+        })
+        // document.querySelector('section').innerHTML=htmldata;
+        // document.querySelector("div").innerHTML=htmldata;
+    </script>
+</body>
+</html>
