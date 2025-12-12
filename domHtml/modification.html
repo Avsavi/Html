@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element modification methods</title>
+    <style>
+        .btn{background-color: red;}
+    </style>
+</head>
+<body>
+    <h1 id="innertext"></h1>
+    <h2 id="st"></h2>
+    <p id="para"></p>
+    <input type="password" name=" Enter username" id="gt" placeholder="deepak" type="button">
+    <a href=""></a>
+    <button class="btn" type="button"></button>
+    <!-- there are the vaious elements modification methods 
+    1.element.innerHTML
+    2.element.textcontent
+    3.element.setattributes
+    4.element.getattributes
+    5.element.removeattributes 
+    -->
+    <script>
+        document.getElementsByTagName('p')[0].innerHTML = "<i> this is inner HTML</i>";
+        document.getElementById('innertext').textContent= "This is innertext property";
+        var st=document.getElementById('st');
+        st.style.backgroundColor="red";
+        st.innerText="this is the set attributes";
+        st.setAttribute("align",'right');
+        var b=document.getElementById("gt");
+        b.getAttribute('type');
+        b.style.backgroundColor='black';
+        b.style.color='white';
+        b.removeAttribute('placeholder');
+        var btn=document.getElementsByClassName('btn')[0];
+        btn.innerText='click me';
+
+        btn.addEventListener("click",ss)
+
+
+        function ss(){
+            btn.removeAttribute('class');
+        }
+
+
+        
+    </script>
+
+</body>
+
+</html>
