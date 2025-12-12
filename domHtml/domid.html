@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document get element by id </title>
+</head>
+<body>
+    <h1 id="domid"> </h1>
+    <h2 class="c"></h2>
+    <h3></h3>
+   
+    <h5></h5>
+    <span></span>
+    <p></p>
+    <input type="text" name="DomName">
+    <button></button>
+    <h4></h4>
+
+    <script>
+        /*
+// var domdata = document.getElementById('domid');
+// domdata.innerHTML = "welcome to the dom by element id ";
+
+// inner html tag to enter the tag inside the tag 
+document.getElementById('domid').innerHTML="<i>this is the ittalic</i>";  
+
+*/
+// inner text pass inside the tag it will take all as a  text
+document.getElementById('domid').innerText='welcome to js dom model'; //o/p - welcome to js dom model
+
+// classname dom method is used for the class name  we have to use the array of class name 
+document.getElementsByClassName('c')[0].innerText='this is dom class'; 
+// o/p -> this is dom class.
+
+
+// get elements by tag name we have to use the array of tag name 
+document.getElementsByTagName('h3')[0].innerText="this is the third tag name of dom manipulation !"
+// o/p -> this is the third tag name of dom manipulation !
+
+// query selector we have to use  for that also we have to use the sigle form not array  
+document.querySelector('span').innerText='this is the span by using the dom query selector method '
+document.querySelector('h5').innerText="This is DON"
+// o/p 1 ->  this is the span by using the dom query selector method 
+//o/p 2 -> This is DON
+
+/*
+document.getElementsByName('DomName')[0].value="";
+
+//
+document.getElementsByTagName('button')[0].innerText='click me'; 
+document.getElementsByTagName('button')[0].addEventListener("click",function(){
+    document.getElementsByTagName('h4')[0].innerText=document.getElementsByName('DomName')[0].value;
+})
+// document.getElementsByTagName('h4')[0].innerText=''; 
+*/
+
+var s=document.getElementsByName('DomName')[0]
+var b=document.getElementsByTagName('button')[0];
+b.innerText='click me'; 
+
+b.addEventListener("click",function(){
+    document.getElementsByTagName('h4')[0].innerText=s.value;
+}); 
+// document.getElementsByTagName('button')[0]
+
+
+
+    </script>
+</body>
+</html>
