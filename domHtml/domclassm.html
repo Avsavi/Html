@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM class manipulation </title>
+    <style>
+        .heading2{
+            background-color: aqua;
+        }
+        .on {
+  background-color:green;
+}
+.off {
+  background-color: red;
+}
+.display{
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+    <h1 id="test">
+        this is the Dom class manipulation. 
+    </h1>
+<h2 ></h2>
+<span></span>
+<button class="off"></button>
+<p class="t1"></p>
+    <script>
+var n= document.getElementById("test");
+n.classList.add("display");
+n.style.color="red";
+var m = document.getElementsByClassName('t1')[0];
+m.innerText="hello welcome to para"
+m.classList.add("secondClass")
+m.style.color="green";
+var a=document.getElementsByTagName('h2')[0]
+a.classList.add("heading2");
+a.style.color="pink";
+a.innerText="class name has been added"
+//a.classList.remove("heading2")
+
+function classMan(){
+   document.getElementsByTagName("button")[0].classList.toggle("on");
+document.getElementsByTagName("button")[0].classList.toggle("off");
+var s=document.getElementsByTagName("button")[0].classList.contains("on");
+
+console.log(s)
+}
+var btn = document.getElementsByTagName("button")[0];
+btn.innerText="click me";
+btn.addEventListener("click",classMan);
+
+
+
+
+    </script>
+</body>
+</html>
