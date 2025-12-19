@@ -12,14 +12,28 @@
     3.element.removechild()
     4.element.replacechild() 
     -->
-    This is a type of HTML node
-    <h1></h1>
-    <h2></h2>
-    <h3></h3>
-    <h4></h4>
-    <p></p>
+    This is a type of HTML node :!!
+    <h5 id="removed">this is h5</h5>
 
-    <script>
+<script>
+ var a= document.createElement('h1');
+ a.textContent="Header of the h1!";
+document.body.appendChild(a);
+ 
+var b=document.createElement('h2');
+b.style.color="Red";
+b.style.backgroundColor="yellow";
+b.textContent="Header of the h2!";
+document.body.appendChild(b);
+
+var c= document.createElement('h3');
+c.textContent="Header of the h3!";
+document.body.appendChild(c);
+
+var s=document.getElementById("removed");
+
+
+console.log(s.parentNode)
 
     </script>
 </body>
