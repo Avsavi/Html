@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add names into page</title>
+</head>
+<body>
+    
+    <h1> this is the student list </h1>
+ <input type="text" id="nameinput" placeholder="Enter name">
+ <input type="text" id="ageinput" placeholder="Enter age"> <br><br>
+ <button onclick="addstudent()">Add Student</button>
+
+ <h1>Show list</h1>
+ <div>
+ </div>
+<script>
+     var myobj=[];
+      function addstudent(){
+        var name=document.getElementById('nameinput');
+        var age=document.getElementById('ageinput');
+
+
+        if(name.value=='' && age.value==''){
+            alert('Please enter valid name and age');
+            return;
+        }
+        var student={
+            name:name.value,
+            age:age.value
+        }
+
+        myobj.push(student);
+        console.log(myobj);
+        name.value='';
+        age.value='';
+        displaystudent();
+      }
+    
+      function displaystudent(){
+        var displaydiv=document.getElementsByTagName('div')[0];
+        displaydiv.innerHTML='';
+
+        for(var i=0;i<myobj.length;i++){
+            displaydiv.innerHTML+=`<p>Name : ${myobj[i].name} --- and Age : ${myobj[i].age} </p>`;
+        }
+      }
+
+    </script>
+</body>
+</html>
