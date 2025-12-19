@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo</title>
+</head>
+<body>
+  <h1>This is the student list</h1>
+  <input type="text" id="nameinput" placeholder="Enter name">
+  <input type="text" id="ageinput" placeholder="Enter age"> <br><br>
+  <button onclick="addstudent()">Add Student</button>
+  
+  <h1>Show list</h1>
+  <div id="studentlist"></div>
+
+  <script>
+    var myobj = [];
+
+    function addstudent() {
+      var name = document.getElementById('nameinput');
+      var age = document.getElementById('ageinput');
+
+      if (name.value === '' || age.value === '') {
+        alert('Please enter valid name and age');
+        return;
+      }
+
+      var student = {
+        name: name.value,
+        age: age.value
+      };
+
+      myobj.push(student);
+      name.value = '';
+      age.value = '';
+      displaystudent();
+    }
+
+    function displaystudent() {
+      var displaydiv = document.getElementById('studentlist');
+      displaydiv.innerHTML = '';
+
+      myobj.forEach((student, index) => {
+        displaydiv.innerHTML += `
+          <p>
+            Name: ${student.name}, Age: ${student.age}
+            <button onclick="deletestudent(${index})">Delete</button>
+          </p>`;
+      });
+    }
+
+    function deletestudent(index) {
+      myobj.splice(index, 1);
+      displaystudent();
+    }
+  </script>
+</body>
+</html>
