@@ -21,10 +21,6 @@
       function addstudent(){
         var name=document.getElementById('nameinput');
         var age=document.getElementById('ageinput');
-        if(name.value=='' && age.value==''){
-            alert('Please enter valid name and age');
-            return;
-        }
         var student={
             name:name.value,
             age:age.value
@@ -40,14 +36,23 @@
         displaydiv.innerHTML='';
         for(var i=0;i<myobj.length;i++){
             displaydiv.innerHTML+=`<p>Name : ${myobj[i].name}  and Age : ${myobj[i].age} </p>`;
-            
+            displaydiv.innerHTML+=`<button onclick="deletestudent(${i})">Delete Student</button>`;
+            displaydiv.innerHTML+=`<button onclick="editstudent(${i})">Edit Student</button>`;
         }
       }
     
-      function deletestudent(){
-        myobj.splice(0,1);
+      function deletestudent(i){
+       myobj.splice(i,1); 
         displaystudent();
-        addstudent();
+        // addstudent();
+      }
+
+      function editstudent(i){
+        document.getElementById('nameinput').value=myobj[i].name;
+        document.getElementById('ageinput').value=myobj[i].age;
+        document.querySelector('button').innerText="Update Student";
+     
+        
       }
  </script>
 </body>
