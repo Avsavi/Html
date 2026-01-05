@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event Bubling</title>
+</head>
+
+<body>
+    <div id="parent-div">
+        <button id="childBtn"></button>
+    </div>
+    <script>
+
+        // event bubbling : when we click on element the event first goes to child element and then to parent element and event goes to document and window object. that is called event bubbling.
+        // event bubbling always go with child to parent.
+        
+        const parentDiv = document.getElementById("parent-div");
+        const childBtn = document.getElementById("childBtn");
+        childBtn.innerText = "Click Me";
+
+        
+        parentDiv.addEventListener('click',function(){
+            console.log("Parent Div Clicked");
+        })
+        childBtn.addEventListener('click',function(){
+            console.log("Child Button Clicked");
+        })
+    </script>
+</body>
+
+</html>
