@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom </title>
+</head>
+<body>
+    <h1 id="one"></h1>
+    <h2></h2>
+    <h4></h4>
+    <p></p>
+    <span></span>
+    <button  onClick = "add()"> Add</button>
+
+    <button  onClick = remove()> Delete</button>
+    <script>
+        document.getElementById("one").innerText = "This is heading one for the java script DOM";
+        document.getElementsByTagName("h2")[0].innerText = "This is heading two for the java script DOM";
+        // document.getElementsByTagName("button")[0].innerText = "Add me";
+        // document.getElementsByTagName("button")[1].innerText = "Remove me";
+        
+        function add(){
+           const addButton=document.createElement("h4");
+           addButton.innerText="you have added item in your cart successfully";
+              document.body.appendChild(addButton);
+        }
+        function remove(){
+            const removeButton=document.querySelector("h4");
+            document.body.removeChild(removeButton);
+        }
+
+
+    </script>
+</body>
+</html>
