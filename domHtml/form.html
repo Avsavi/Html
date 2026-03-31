@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c{
+            padding: 9px;
+            margin: 10px;
+            box-shadow: 1px 1px 1px gray;
+            width: 90%;
+
+        }
+        .g{
+            background-color: greenyellow;
+            padding: 10px 30px;
+            border: none;
+            margin: 10px;
+        }
+        .r{
+            background-color: red;
+            padding: 10px 30px;
+            border: none;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+
+        function createform(obj){
+            var form=document.createElement('form');
+            var body=document.querySelector('body');
+            body.appendChild(form);
+            var html='';
+            obj.forEach((e) => {
+                var tag=`<input type='${e.type}' placeholder='${e.name}' class='${e.class}'> `;
+                html+=tag+"<br><br>";    
+            });
+            form.innerHTML=html;
+            
+        }
+
+        function btn(a,b){
+            var fistbtn=document.createElement('button');
+            var secondbtn=document.createElement('button');
+            fistbtn.innerText=a.name;
+            secondbtn.innerText=b.name;
+            fistbtn.type=a.type;
+            secondbtn.type=b.type;
+            fistbtn.classList.add(a.class);
+            secondbtn.classList.add(b.class);
+            document.querySelector('form').append(fistbtn);
+            document.querySelector('form').append(secondbtn);
+            
+        }
+        var formobj=[
+           {
+            name:'Enter Uawernam',
+            class:'c',
+            type:'email'
+           },
+           
+           {
+            name:'Enter Password',
+            class:'c',
+            type:'password'
+           },
+           {
+            name:'Enter Password',
+            class:'c',
+            type:'password'
+           },{
+            name:'Enter Password',
+            class:'c',
+            type:'password'
+           },
+           {
+            name:'Enter Password',
+            class:'',
+            type:'checkbox'
+           },
+          
+        ];
+
+
+        var btnobj=[
+            {
+                name:'login',
+                type:'submit',
+                class:'g'
+            },
+            {
+                name:'cancel',
+                type:'reset',
+                class:'r'
+            },
+        ]
+        createform(formobj);
+        btn(btnobj[0],btnobj[1]);
+    </script>
+</body>
+</html>

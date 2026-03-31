@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Event Delegation</title>
+</head>
+
+<body>
+    <div id="parent-div">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <script>
+        // event delegation : when we have multiple child elements and we want to add same event listener to all child elements then instead of adding event listener to each child element we can add event listener to parent element and then check which child element is clicked using event.target property. this is called event delegation.
+        const parentDiv = document.getElementById("parent-div");
+        parentDiv.addEventListener('click', function (event) {
+
+            if (event.target.tagName === 'LI') {
+                console.log("You have clicked:",event.target.textContent);
+            }
+        })
+    </script>
+</body>
+
+</html>

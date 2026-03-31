@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD create and delete element</title>
+</head>
+<body>
+    <input type="text" id="iteminput" placeholder="Enter item">
+<input type="text" id="quantityinput" placeholder="Enter quantity">
+<button id="addBtn">Add Item</button>
+<div id="list"></div>
+
+<script>
+let items = [];
+
+document.getElementById("addBtn").addEventListener("click", additem);
+
+function additem() {
+    let item = document.getElementById("iteminput").value;
+    let quantity = document.getElementById("quantityinput").value;
+
+    items.push({ itemname: item, itemquantity: quantity });
+    displayitem();
+
+    document.getElementById("iteminput").value = "";
+    document.getElementById("quantityinput").value = "";
+}
+
+function displayitem() {
+    let listDiv = document.getElementById("list");
+    listDiv.innerHTML = "";
+
+    items.forEach((obj, index) => {
+        let p = document.createElement("p");
+        p.textContent = `Item: ${obj.itemname}, Quantity: ${obj.itemquantity}`;
+
+        let delBtn = document.createElement("button");
+        delBtn.textContent = "Delete";
+        delBtn.onclick = () => {
+            items.splice(index, 1);
+            displayitem();
+        };
+
+        p.appendChild(delBtn);
+        listDiv.appendChild(p);
+    });
+}
+</script>
+
+</body>
+</html>

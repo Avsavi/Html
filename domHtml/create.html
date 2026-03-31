@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a data from the  dom model </title>
+</head>
+<body>
+    <h1> dom create object </h1>
+    <input type="text" id="iteminput" placeholder="Enter item">
+    <input type="text" id="quantityinput" placeholder="Enter quantity"> <br><br>
+    <button onclick="additem()">click me</button>
+
+    <div>
+    </div>
+    <script>
+        var items=[];
+        function additem(){
+            var item=document.getElementById('iteminput');
+            var quantity=document.getElementById('quantityinput');
+
+            var obj={
+                itemname:item.value,
+                itemquantity:quantity.value
+            }
+            items.push(obj);
+         console.log(items);
+            // additem();
+            displayitem();
+            item.value='';
+            quantity.value='';
+            
+            function displayitem(){
+                var displaydiv=document.querySelector('div')[0];
+                displaydiv.innerHTML='';
+
+                for(var i=0;i<items.length;i++){
+                    displaydiv.innerHTML+=`<p> Item Name : ${items[i].itemname} and Item Quantity : ${items[i].itemquantity} </p>`;
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

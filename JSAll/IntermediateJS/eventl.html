@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Event Listner</title>
+</head>
+<body>
+    <h1></h1>
+    <!-- <button onclick="alert('clicked')"> click me</button> -->
+     <button id="addButton"> Add</button>
+     <button id="removeButton"> Delete</button>
+
+    <script>
+
+        // event listener 
+const addButton=document.getElementById("addButton");
+const removeButton=document.getElementById("removeButton");
+
+  function greet(){
+    alert("welcome to the programming world");
+  }
+  addButton.addEventListener("click",greet);
+  removeButton.addEventListener("click",function(){ 
+    addButton.removeEventListener("click",greet);
+    alert("you are not welcome here");
+}       );  
+
+    </script>
+</body>
+</html>

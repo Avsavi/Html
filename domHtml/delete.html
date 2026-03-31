@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <h1> this is the student list </h1>
+ <input type="text" id="nameinput" placeholder="Enter name">
+ <input type="text" id="ageinput" placeholder="Enter age"> <br><br>
+ <button onclick="addstudent()">Add Student</button>
+ <h1>Show list</h1>
+ <div>
+ </div>
+ <script>
+    document.getElementById('nameinput').value="";
+    document.getElementById('ageinput').value="";
+
+     var myobj=[];
+      function addstudent(){
+        var name=document.getElementById('nameinput');
+        var age=document.getElementById('ageinput');
+        var student={
+            name:name.value,
+            age:age.value
+        }
+        myobj.push(student);
+        console.log(myobj);
+        name.value='';
+        age.value='';
+        displaystudent();
+      }
+      function displaystudent(){
+        var displaydiv=document.getElementsByTagName('div')[0];
+        displaydiv.innerHTML='';
+        for(var i=0;i<myobj.length;i++){
+            displaydiv.innerHTML+=`<p>Name : ${myobj[i].name}  and Age : ${myobj[i].age} </p>`;
+            displaydiv.innerHTML+=`<button onclick="deletestudent(${i})">Delete Student</button>`;
+            displaydiv.innerHTML+=`<button onclick="editstudent(${i})">Edit Student</button>`;
+        }
+      }
+    
+      function deletestudent(i){
+       myobj.splice(i,1); 
+        displaystudent();
+        // addstudent();
+      }
+
+      function editstudent(i){
+        document.getElementById('nameinput').value=myobj[i].name;
+        document.getElementById('ageinput').value=myobj[i].age;
+        document.querySelector('button').innerText="Update Student";
+     
+        
+      }
+ </script>
+</body>
+</html>
